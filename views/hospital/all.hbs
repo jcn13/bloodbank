@@ -1,0 +1,25 @@
+<h1>Hospitals</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Phone Number</th>
+			<th>Details</th>
+		</tr>
+	  {{#each hospitals}}
+	  	<tr>
+	  		<td>{{name}}</td>
+	  		<td>{{address}}</td>
+	  		<td>{{phone_number}}</td>
+	  		<td><a href="/hospital/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/hospital/" type="button" class="btn btn-primary">Back</a>
+		<a href="/hospital/new" type="button" class="btn btn-danger">New Hospital</a>
+		{{!-- <a href="/hospital/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

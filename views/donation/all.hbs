@@ -1,0 +1,30 @@
+<h1>Donations</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Blood</th>
+			<th>Employee Name</th>
+			<th>Blood Bank</th>
+			<th>Date</th>
+			<th>Details</th>
+			{{!-- <th>Action</th> --}}
+		</tr>
+	  {{#each donations}}
+	  	<tr>
+	  		<td>{{name}}</td>
+	  		<td>{{type}}</td>
+	  		<td>{{emp_name}}</td>
+	  		<td>{{bno}}</td>
+	  		<td>{{date}}</td>
+	  		<td><a href="/donation/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/donation" type="button" class="btn btn-primary">Back</a>	
+		<a href="/donation/new" type="button" class="btn btn-danger">New Donation</a>
+		{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

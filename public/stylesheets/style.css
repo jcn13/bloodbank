@@ -1,0 +1,224 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body {
+	border-top: 2px solid #b5060f;
+	background: #f4f7fa;
+	color: #343a40;
+
+	background: url(../images/background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.center {
+	margin: 2rem auto;
+}
+
+.flexCenter {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+a {
+	font-weight: bold;
+}
+
+footer a {
+	display: block;
+	color: rgba(0,0,0,.5);
+}
+
+footer a:hover {
+	color: rgba(0,0,0,.9);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.navbar-brand {
+	width: 20%;
+	margin-right: 3rem;
+	padding: 0;
+}
+
+.bg-light {
+    background: rgba(255,255,255,.6)!important;
+    box-shadow: 0px 0px 15px #cad0d6;
+    width: 100vw;
+}
+
+h1 {
+	text-align: center;
+	color: #343a40;
+	text-shadow: 1px 0px 5px #cad0d6;
+	font-size: 5rem !important;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #343a40;
+	text-shadow: 1px 0px 5px #cad0d6;
+	margin: 2rem 0;
+	font-size: 3rem;
+	font-weight: bold;	
+}
+
+footer {
+	background: rgba(244,247,250,.6);
+	border-top: 2px solid #b5060f;
+}
+
+footer .col-4 img {
+	width: 70%;
+	padding: 2rem 2rem 0;
+}
+
+footer .nav{
+	padding: 5rem 0;
+	text-align: center;
+}
+
+footer .col-4 p {
+	color: #343a40;
+    padding: 0 3rem;
+    font-size: .8rem;
+    line-height: 2;
+}
+
+.copyright {
+	background: #b5060f;
+}
+
+.copyright p {
+	color: #f4f7fa;
+	text-align: center;
+	padding: 1rem 0;
+	margin-bottom: 0;
+}
+
+main {
+	padding: 5rem 3rem;
+	margin: 0 auto;
+}
+
+.contentBg {
+	background: rgba(255,255,255,.8);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 15px #cad0d6;
+	padding: 2rem;
+	margin: 2rem auto;
+}
+
+.edit label,
+.new label {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.single td:nth-child(odd) {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.btn {
+	border: 0;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	flex-grow: 1;
+	margin: .5rem;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.btn-warning {
+	background: #ed6e0f;
+	color: #ffffff;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.btn-warning:hover {
+	box-shadow: 0px 0px 5px #cad0d6;
+	background: #d1660f;
+	color: #f4f7fa;
+}
+
+.btn-danger {
+	background: #da000f;
+	color: #ffffff;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.btn-danger:hover {
+	box-shadow: 0px 0px 5px #cad0d6;
+	background: #bb000f;
+	color: #f4f7fa;
+}
+
+.btn-primary {
+	background: #3173ff;
+	color: #ffffff;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.btn-primary:hover {
+	box-shadow: 0px 0px 5px #cad0d6;
+	background: #313fff;
+	color: #f4f7fa;
+}
+
+.btn-default {
+	background: #808285;
+	color: #ffffff;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.btn-default:hover {
+	box-shadow: 0px 0px 5px #cad0d6;
+	background: #58595b;
+	color: #f4f7fa;
+}
+
+.btn-success {
+	background: #3fc152;
+	color: #ffffff;
+	-webkit-transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out; 
+    transition: color 1s ease-in-out, background 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.btn-success:hover {
+	box-shadow: 0px 0px 5px #cad0d6;
+	background: #3fa352;
+	color: #f4f7fa;
+}
+
+label {
+	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 1.3rem;
+}

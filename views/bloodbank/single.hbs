@@ -1,0 +1,55 @@
+<h1>Bloodbank</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Blood Bank</td>
+	  		<td>{{bloodbank.id}}</td>			
+		</tr>
+		<tr>
+			<td>Manager Name</td>
+	  		<td>{{bloodbank.emp_name}}</td>			
+		</tr>
+		<tr>
+			<td>Number of Orders</td>
+	  		<td>{{bloodbank.orders}}</td>			
+		</tr>		
+	</table>
+	<form action="/bloodbank/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/bloodbank/" type="button" class="btn btn-primary">Back</a>
+			<a href="/bloodbank/{{id}}/edit" type="button" class="btn btn-warning">Edit Bloodbank</a>
+			<button type="submit" class="btn btn-danger">Delete Bloodbank</button>	
+			
+		</div>
+	</form>
+	<h2>Blood Inventory</h2>
+	<table class="table">
+		<tr>
+			<th>Blood Type</th>
+			<th>Quantity</th>
+		</tr>
+	  {{#each blood}}
+	  	<tr>
+	  		<td>{{type}}</td>
+	  		<td>{{qtd}}</td>	  		
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<h2>Hospital's orders</h2>
+	<table class="table">
+		<tr>
+			<th>Blood</th>
+			<th>Hospital Name</th>
+			<th>Date</th>
+			<th>Details</th>
+		</tr>
+	  {{#each order}}
+	  	<tr>
+	  		<td>{{type}}</td>
+	  		<td>{{name}}</td>	  		
+	  		<td>{{date}}</td>
+	  		<td><a href="/order/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+</div>

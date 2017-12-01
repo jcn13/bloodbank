@@ -1,0 +1,29 @@
+<h1>Order</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Blood type</td>
+	  		<td>{{type}}</td>			
+		</tr>
+		<tr>
+			<td>Hospital Name</td>
+	  		<td>{{name}}</td>			
+		</tr>
+		<tr>
+			<td>Blood Bank</td>
+	  		<td>{{bno}}</td>			
+		</tr>
+		<tr>
+			<td>Date</td>
+	  		<td>{{date}}</td>			
+		</tr>		
+	</table>
+	<form action="/order/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/order/" type="button" class="btn btn-primary">Back</a>
+			<a href="/order/{{id}}/edit" type="button" class="btn btn-warning">Edit Order</a>
+			<button type="submit" class="btn btn-danger">Delete order</button>	
+			
+		</div>
+	</form>
+</div>

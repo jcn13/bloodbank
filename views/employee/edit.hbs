@@ -1,0 +1,26 @@
+<h1>Edit Employee</h1>
+<form class="form" method="post" action="/employee/{{employee.id}}?_method=PUT">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input value="{{employee.name}}" type="text" class="form-control" id="name" name="name" placeholder="Enter a name">
+		<label for="address">Address</label>
+		<input value="{{employee.address}}" type="text" class="form-control" id="address" name="address" placeholder="Enter an address">
+		<label for="role">Position</label>
+		<select name="role" id="role" class="form-control">
+		{{#select employee.role}}
+		{{#each role}}
+			<option value="{{id}}">{{position}}</option>
+		{{/each}}	
+		{{/select}}
+		</select>
+		<label for="email">E-mail</label>
+		<input value="{{employee.email}}" type="text" class="form-control" id="email" name="email" placeholder="Enter an email">
+		<label for="phone_number">Phone Number</label>
+		<input value="{{employee.phone_number}}" type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter a Phone Number">
+	</div>
+	<div class="flexCenter">
+		<a href="/employee/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-danger">Update</button>
+		
+	</div>
+</form>

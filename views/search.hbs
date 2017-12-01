@@ -1,0 +1,15 @@
+<h1>Search</h1>
+	<form action="/donor/query" method="get">
+		<label for="name">Select</label>
+		<select name="var" id="var" class="form-control">
+			<option value="name">By Name</option>
+			<option value="type">By Type</option>
+			<option value="age+">By Age older than</option>
+			<option value="age-">By Age younger than</option>
+		</select>
+			<input type="text" class="form-control" id="name" name="name" placeholder="Enter a name">
+		<div class="flexCenter">
+			<a href="/donor/" type="button" class="btn btn-primary">Back</a>
+			<button type="submit" class="btn btn-danger">Search</button>			
+		</div>
+	</form>

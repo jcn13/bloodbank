@@ -1,0 +1,15 @@
+<h1>Create new Bloodbank</h1>
+<form class="form" method="post" action="/bloodbank">
+	<div class="form-group">		
+		<label for="emp_id">BloodBank Manager</label>
+		<select name="emp_id" id="emp_id" class="form-control">
+		{{#each bloodbank}}
+			<option value="{{id}}">{{emp_name}}</option>
+		{{/each}}
+		</select>		
+	</div>
+	<div class="flexCenter">		
+		<a href="/bloodbank/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-success">Create</button>
+	</div>
+</form>

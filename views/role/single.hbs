@@ -1,0 +1,21 @@
+<h1>Role</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Code</td>
+			<td>{{id}}</td>
+		</tr>
+		<tr>
+			<td>Position</td>
+	  		<td>{{position}}</td>			
+		</tr>		
+	</table>
+	<form action="/role/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/role/" type="button" class="btn btn-primary">Back</a>
+			<a href="/role/{{id}}/edit" type="button" class="btn btn-warning">Edit Role</a>
+			<button type="submit" class="btn btn-danger">Delete Role</button>	
+			
+		</div>
+	</form>
+</div>

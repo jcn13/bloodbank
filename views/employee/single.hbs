@@ -1,0 +1,33 @@
+<h1>Employee</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Name</td>
+			<td>{{name}}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+	  		<td>{{address}}</td>			
+		</tr>
+		<tr>
+			<td>Position</td>
+	  		<td>{{position}}</td>			
+		</tr>
+		<tr>
+			<td>E-mail</td>
+	  		<td>{{email}}</td>			
+		</tr>
+	  	<tr>
+			<td>Phone Number</td>
+			<td>{{phone_number}}</td>
+	  	</tr>	
+	</table>
+	<form action="/employee/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/employee/" type="button" class="btn btn-primary">Back</a>
+			<a href="/employee/{{id}}/edit" type="button" class="btn btn-warning">Edit Employee</a>
+			<button type="submit" class="btn btn-danger">Delete Employee</button>	
+			
+		</div>
+	</form>
+</div>

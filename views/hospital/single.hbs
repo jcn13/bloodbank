@@ -1,0 +1,25 @@
+<h1>Hospital</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Name</td>
+			<td>{{name}}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+	  		<td>{{address}}</td>			
+		</tr>
+		<tr>
+			<td>Phone Number</td>
+			<td>{{phone_number}}</td>
+	  	</tr>	
+	</table>
+	<form action="/hospital/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/hospital/" type="button" class="btn btn-primary">Back</a>
+			<a href="/hospital/{{id}}/edit" type="button" class="btn btn-warning">Edit Hospital</a>
+			<button type="submit" class="btn btn-danger">Delete Hospital</button>	
+			
+		</div>
+	</form>
+</div>

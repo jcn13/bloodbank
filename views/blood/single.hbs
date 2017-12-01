@@ -1,0 +1,25 @@
+<h1>Blood</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Code</td>
+			<td>{{id}}</td>
+		</tr>
+		<tr>
+			<td>Cost</td>
+	  		<td>{{cost}}</td>			
+		</tr>
+		<tr>
+			<td>Type</td>
+	  		<td>{{type}}</td>			
+		</tr>		
+	</table>
+	<form action="/blood/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/blood/" type="button" class="btn btn-primary">Back</a>
+			<a href="/blood/{{id}}/edit" type="button" class="btn btn-warning">Edit Blood</a>
+			<button type="submit" class="btn btn-danger">Delete Blood</button>	
+			
+		</div>
+	</form>
+</div>

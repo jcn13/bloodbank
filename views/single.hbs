@@ -1,0 +1,54 @@
+<h1>Donor</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Name</td>
+			<td>{{donor.name}}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+	  		<td>{{donor.address}}</td>			
+		</tr>
+		<tr>
+			<td>Age</td>
+	  		<td>{{donor.age}}</td>			
+		</tr>
+		<tr>
+			<td>Gender</td>
+	  		<td>{{donor.sex}}</td>			
+		</tr>
+	  	<tr>
+			<td>Phone Number</td>
+			<td>{{donor.phone_number}}</td>
+	  	</tr>
+	  	<tr>
+			<td>Blood Type</td>
+			<td>{{donor.type}}</td>
+	  	</tr>	
+	</table>
+	<form action="/donor/{{donor.id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/donor/" type="button" class="btn btn-primary">Back</a>
+			<a href="/donor/{{donor.id}}/edit" type="button" class="btn btn-warning">Edit Donor</a>
+			<button type="submit" class="btn btn-danger">Delete Donor</button>
+			
+		</div>
+	</form>
+	<h2>Donations</h2>
+	<table class="table">
+		<tr>
+			<th>Employee Name</th>
+			<th>Blood Bank</th>
+			<th>Date</th>
+			<th>Details</th>
+		</tr>
+	  {{#each donation}}
+	  	<tr>
+	  		<td>{{emp_name}}</td>
+	  		<td>{{bno}}</td>
+	  		<td>{{date}}</td>
+	  		<td><a href="/donation/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+</div>

@@ -1,0 +1,23 @@
+<h1>Roles</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Code</th>
+			<th>Position</th>
+			<th>Details</th>
+		</tr>
+	  {{#each roles}}
+	  	<tr>
+	  		<td>{{id}}</td>
+	  		<td>{{position}}</td>
+	  		<td><a href="/role/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/role/" type="button" class="btn btn-primary">Back</a>
+		<a href="/role/new" type="button" class="btn btn-danger">New Role</a>
+		{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

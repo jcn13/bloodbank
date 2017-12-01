@@ -1,0 +1,25 @@
+<h1>Issues</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Blood</th>
+			<th>Blood Bank</th>
+			<th>Date</th>
+			<th>Details</th>
+		</tr>
+	  {{#each issues}}
+	  	<tr>
+	  		<td>{{type}}</td>
+	  		<td>{{bno}}</td>	  		
+	  		<td>{{date}}</td>
+	  		<td><a href="/issue/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/issue" type="button" class="btn btn-primary">Back</a>	
+		<a href="/issue/new" type="button" class="btn btn-danger">New issue</a>
+		{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<h1>Bloods</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Code</th>
+			<th>Cost</th>
+			<th>Type</th>
+			<th>Details</th>
+		</tr>
+	  {{#each bloods}}
+	  	<tr>
+	  		<td>{{id}}</td>
+	  		<td>{{cost}}</td>
+	  		<td>{{type}}</td>
+	  		<td><a href="/blood/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/blood/" type="button" class="btn btn-primary">Back</a>
+		<a href="/blood/new" type="button" class="btn btn-danger">New Blood</a>
+		{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+	</div>
+</div>

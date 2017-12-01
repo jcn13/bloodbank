@@ -1,0 +1,25 @@
+<h1>Issue</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Blood type</td>
+	  		<td>{{type}}</td>			
+		</tr>
+		<tr>
+			<td>Blood Bank</td>
+	  		<td>{{bno}}</td>			
+		</tr>
+		<tr>
+			<td>Date</td>
+	  		<td>{{date}}</td>			
+		</tr>		
+	</table>
+	<form action="/issue/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/issue/" type="button" class="btn btn-primary">Back</a>
+			<a href="/issue/{{id}}/edit" type="button" class="btn btn-warning">Edit Issue</a>
+			<button type="submit" class="btn btn-danger">Delete Issue</button>	
+			
+		</div>
+	</form>
+</div>

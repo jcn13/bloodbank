@@ -1,0 +1,27 @@
+<h1>Orders</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Blood</th>
+			<th>Blood Bank</th>
+			<th>Hospital Name</th>
+			<th>Date</th>
+			<th>Details</th>
+		</tr>
+	  {{#each orders}}
+	  	<tr>
+	  		<td>{{type}}</td>
+	  		<td>{{bno}}</td>
+	  		<td>{{name}}</td>	  		
+	  		<td>{{date}}</td>
+	  		<td><a href="/order/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/order" type="button" class="btn btn-primary">Back</a>	
+		<a href="/order/new" type="button" class="btn btn-danger">New Order</a>
+		{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

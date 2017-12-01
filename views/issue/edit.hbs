@@ -1,0 +1,26 @@
+<h1>Edit Issue</h1>
+<form class="form" method="post" action="/issue/{{issue.id}}?_method=PUT">
+	<div class="form-group">
+		<label for="bid">Blood Type</label>
+		<select name="bid" id="bid" class="form-control">
+		{{#select issue.bid}}
+		{{#each blood}}
+			<option value="{{id}}">{{type}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+		<label for="bno">Blood Bank</label>
+		<select name="bno" id="bno" class="form-control">
+		{{#select issue.bno}}
+		{{#each bloodbank}}
+			<option value="{{id}}">{{id}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+	</div>
+	<div class="flexCenter">
+		<a href="/issue/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-danger">Update</button>
+		
+	</div>
+</form>

@@ -1,0 +1,33 @@
+<h1>Donation</h1>
+<div>
+	<table class="table">
+		<tr>
+			<td>Name</td>
+			<td>{{name}}</td>
+		</tr>
+		<tr>
+			<td>Blood type</td>
+	  		<td>{{type}}</td>			
+		</tr>
+		<tr>
+			<td>Employee Name</td>
+	  		<td>{{emp_name}}</td>			
+		</tr>
+		<tr>
+			<td>Blood Bank</td>
+	  		<td>{{bno}}</td>			
+		</tr>
+		<tr>
+			<td>Date</td>
+	  		<td>{{date}}</td>			
+		</tr>		
+	</table>
+	<form action="/donation/{{id}}?_method=DELETE" method="post">
+		<div class="flexCenter">
+			<a href="/donation/" type="button" class="btn btn-primary">Back</a>
+			<a href="/donation/{{id}}/edit" type="button" class="btn btn-warning">Edit donation</a>
+			<button type="submit" class="btn btn-danger">Delete Donation</button>	
+			
+		</div>
+	</form>
+</div>

@@ -1,0 +1,20 @@
+<h1>Bloodbanks</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Blood Bank</th>
+			<th>Manager Name</th>
+			<th>Number of Orders</th>
+			<th>Details</th>
+		</tr>
+	  {{#each bloodbanks}}
+	  	<tr>
+	  		<td>{{id}}</td>
+	  		<td>{{emp_name}}</td>
+	  		<td>{{orders}}</td>
+	  		<td><a href="/bloodbank/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	{{!-- <a href="/role/search" type="button" class="btn btn-warning">Search</a> --}}
+</div>

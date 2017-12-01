@@ -1,0 +1,34 @@
+<h1>Edit Bloodbank</h1>
+<form class="form" method="post" action="/bloodbank/{{bloodbank.id}}?_method=PUT">
+	<div class="form-group">
+		<label for="bid">Blood Type</label>
+		<select name="bid" id="bid" class="form-control">
+		{{#select bloodbank.bid}}
+		{{#each blood}}
+			<option value="{{id}}">{{type}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+		<label for="hid">Hospital</label>
+		<select name="hid" id="hid" class="form-control">
+		{{#select bloodbank.hid}}
+		{{#each hospital}}
+			<option value="{{id}}">{{name}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+		<label for="bno">Blood Bank</label>
+		<select name="bno" id="bno" class="form-control">
+		{{#select bloodbank.bno}}
+		{{#each bloodbank}}
+			<option value="{{id}}">{{id}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+	</div>
+	<div class="flexCenter">
+		<a href="/bloodbank/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-danger">Update</button>
+		
+	</div>
+</form>

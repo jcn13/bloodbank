@@ -1,0 +1,30 @@
+<h1>Donors</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Age</th>
+			<th>Gender</th>
+			<th>Phone Number</th>
+			<th>Blood Type</th>
+			<th>Details</th>
+		</tr>
+	  {{#each donors}}
+	  	<tr>
+	  		<td>{{name}}</td>
+	  		<td>{{address}}</td>
+	  		<td>{{age}}</td>
+	  		<td>{{sex}}</td>	  		
+	  		<td>{{phone_number}}</td>
+	  		<td>{{type}}</td>
+	  		<td><a href="/donor/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/donor/" type="button" class="btn btn-primary">Back</a>
+		<a href="/donor/new" type="button" class="btn btn-danger">New Donor</a>
+		<a href="/donor/search" type="button" class="btn btn-warning">Search</a>
+	</div>
+</div>

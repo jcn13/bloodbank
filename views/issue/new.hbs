@@ -1,0 +1,22 @@
+<h1>Create new Issue</h1>
+<form class="form" method="post" action="/issue">
+	<div class="form-group">
+		<label for="bid">Blood Type</label>
+		<select name="bid" id="bid" class="form-control">
+		{{#each blood}}
+			<option value="{{id}}">{{type}}</option>
+		{{/each}}
+		</select>
+		<label for="bno">Blood Bank</label>
+		<select name="bno" id="bno" class="form-control">
+		{{#each bloodbank}}
+			<option value="{{id}}">{{id}}</option>
+		{{/each}}
+		</select>		
+	</div>
+	<div class="flexCenter">
+		<a href="/issue/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-success">Create</button>
+		
+	</div>
+</form>

@@ -1,0 +1,29 @@
+<h1>Employees</h1>
+<div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Position</th>
+			<th>E-mail</th>
+			<th>Phone Number</th>
+			<th>Details</th>
+		</tr>
+	  {{#each employees}}
+	  	<tr>
+	  		<td>{{name}}</td>
+	  		<td>{{address}}</td>
+	  		<td>{{position}}</td>
+	  		<td>{{email}}</td>
+	  		<td>{{phone_number}}</td>
+	  		<td><a href="/employee/{{id}}" type="button" class="btn btn-default">Select</a></td>
+	  	</tr>
+	  {{/each}}		
+	</table>
+	<div class="flexCenter">
+		<a href="/employee/" type="button" class="btn btn-primary">Back</a>
+		<a href="/employee/new" type="button" class="btn btn-danger">New Employee</a>
+		{{!-- <a href="/employee/search" type="button" class="btn btn-warning">Search</a> --}}
+		
+	</div>
+</div>

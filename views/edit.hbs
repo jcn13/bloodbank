@@ -1,0 +1,34 @@
+<h1>Edit Donor</h1>
+<form class="form" method="post" action="/donor/{{donor.id}}?_method=PUT">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input value="{{donor.name}}" type="text" class="form-control" id="name" name="name" placeholder="Enter a name">
+		<label for="address">Address</label>
+		<input value="{{donor.address}}" type="text" class="form-control" id="address" name="address" placeholder="Enter an address">
+		<label for="birth">Birth data (yyyy-mm-dd)</label>
+		<input  type="text" class="form-control" id="birth" name="birth" placeholder="Enter an birth">
+		<label for="sex">Gender</label>
+		<select name="sex" id="sex" class="form-control">
+		{{#select donor.sex}}
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		{{/select}}
+		</select>
+		<label for="phone_number">Phone Number</label>
+		<input value="{{donor.phone_number}}" type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter a Phone Number">
+		<label for="blood">Blood Type</label>
+		<select name="blood" id="blood" class="form-control">
+		{{#select donor.blood}}
+		{{#each blood}}
+			<option value="{{id}}">{{type}}</option>
+		{{/each}}	
+		{{/select}}
+		</select>
+	</div>
+	<div class="flexCenter">
+		<a href="/donor/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-danger">Update</button>
+		
+	</div>
+</form>

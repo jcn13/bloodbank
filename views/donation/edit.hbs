@@ -1,0 +1,36 @@
+<h1>Edit Donation</h1>
+<form class="form" method="post" action="/donation/{{donation.id}}?_method=PUT">
+	<div class="form-group">
+		<label for="did">Name</label>		
+		<select name="did" id="did" class="form-control">
+		{{#select donation.did}}
+		{{#each donor}}
+			<option value="{{id}}">{{name}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+		<label for="type">Blood Type</label>
+		<input type="text" value="{{donation.type}}" class="form-control" readonly="readonly">
+		<label for="emp_id">Employee</label>
+		<select name="emp_id" id="emp_id" class="form-control">
+		{{#select donation.emp_id}}
+		{{#each employee}}
+			<option value="{{id}}">{{name}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+		<label for="bno">Blood Bank</label>
+		<select name="bno" id="bno" class="form-control">
+		{{#select donation.bno}}
+		{{#each bloodbank}}
+			<option value="{{id}}">{{id}}</option>
+		{{/each}}
+		{{/select}}
+		</select>
+	</div>
+	<div class="flexCenter">
+		<a href="/donation/" type="button" class="btn btn-primary">Back</a>
+		<button type="submit" class="btn btn-danger">Update</button>
+		
+	</div>
+</form>
